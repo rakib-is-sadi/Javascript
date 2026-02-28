@@ -150,7 +150,7 @@ let strings = "";
 
 for (let i = 1; i <= 15; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
-    strings+= "FizzBuzz-";
+    strings += "FizzBuzz-";
   } else if (i % 5 === 0) {
     strings += "Buzz-";
   } else if (i % 3 === 0) {
@@ -162,21 +162,28 @@ for (let i = 1; i <= 15; i++) {
 
 console.log(strings);
 
-
 //ask 13: The Battery Charger
 
 let battery = 10;
 
-while(battery <= 100) {
-
-  if(battery === 50) {
+while (battery <= 100) {
+  if (battery === 50) {
     console.log("50% reached - Power Saving Mode Off");
-  }
-  else if (battery === 100){
+  } else if (battery === 100) {
     console.log("Phone Fully Charged! ⚡");
-  }
-  else{
-    console.log("Current charge: " + battery + "%")
+  } else {
+    console.log("Current charge: " + battery + "%");
   }
   battery += 5;
 }
+
+let count = 2;
+let totaly = 1;
+let equal = 0;
+
+for (let i = 1; i <= 10; i++) {
+  totaly = totaly * count;
+  equal = equal + totaly;
+  console.log(`${totaly / 2} * ${count} = ${totaly}`);
+}
+console.log("Final Value is "+ equal);
