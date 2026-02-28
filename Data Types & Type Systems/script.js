@@ -1,0 +1,1 @@
+10 > 12 ? console.log("Yes") : console.log("NO");
