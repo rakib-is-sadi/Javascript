@@ -186,4 +186,26 @@ for (let i = 1; i <= 10; i++) {
   equal = equal + totaly;
   console.log(`${totaly / 2} * ${count} = ${totaly}`);
 }
-console.log("Final Value is "+ equal);
+console.log("Final Value is " + equal);
+
+let i = 0;
+
+while (i <= 20) {
+  i++;
+  if (i === 16) {
+    break;
+  } else if (i % 2 === 0) {
+    continue;
+  } else if (i === 7) {
+    continue;
+  } else {
+    console.log(i);
+  }
+}
+
+let q = 2;
+let p;
+for(let i = 1; i <= 10; i++) {
+    p = q ** i;
+console.log(p)
+}
