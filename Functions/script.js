@@ -8,10 +8,3 @@ function abcd() {
 }
 
 abcd();
-abcd();
-abcd();
-abcd();
-abcd();
-abcd();
-abcd();
-abcd();
