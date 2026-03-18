@@ -75,3 +75,13 @@ function fc(val) {
 fc(function () {
   console.log("This is Rakibul Islam") // we can treat function as value
 });
+
+
+
+function discountCalculator(discount) {
+  let price = 100;
+  return price - price * (discount / 100);
+}
+
+console.log(discountCalculator(10));
+console.log(discountCalculator(20));
