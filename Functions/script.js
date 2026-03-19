@@ -103,3 +103,18 @@ function calculateTotal(price, discountPercentage) {
 }
 
 console.log(calculateTotal(200, 20));
+
+function analyzeNumbers(n) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 2 === 1) {
+      console.log(`${i} is Odd and Divisible by 3`);
+    } else if (i % 3 === 0 && i % 2 === 0) {
+      console.log(`${i} is Even and Divisible by 3`);
+    } else if (i % 2 === 1) {
+      console.log(`${i} is Odd`);
+    } else {
+      console.log(`${i} is Even.0`);
+    }
+  }
+}
+analyzeNumbers(10);
