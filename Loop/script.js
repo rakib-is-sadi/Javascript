@@ -114,9 +114,8 @@ let massage = "";
 
 for (let i = 1; i <= 5; i++) {
   massage = massage + "A";
+  console.log(massage);
 }
-
-console.log(massage);
 
 let marker = "";
 
@@ -177,6 +176,22 @@ while (battery <= 100) {
   battery += 5;
 }
 
+let empty = ""
+
+while (battery <= 100) {
+  if (battery === 50) {
+ empty = "50% reached - Power Saving Mode Off";
+  } else if (battery === 100) {
+ empty = "Phone Fully Charged! ⚡";
+  } else {
+ empty ="Current charge: " + battery + "%";
+  }
+  battery += 5;
+console.log(battery);
+
+}
+
+
 let count = 2;
 let totaly = 1;
 let equal = 0;
@@ -205,7 +220,13 @@ while (i <= 20) {
 
 let q = 2;
 let p;
-for(let i = 1; i <= 10; i++) {
-    p = q ** i;
-console.log(p)
+for (let i = 1; i <= 10; i++) {
+  p = q ** i;
+  console.log(p);
+}
+
+let plus = 0;
+for (let i = 0; i <= 10; i++) {
+  plus = plus + i;
+  console.log(plus);
 }
