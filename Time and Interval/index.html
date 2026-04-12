@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time and Interval</title>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+  #dwnld {
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background: rgb(231, 231, 231);
+    color: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #out {
+    width: 170px;
+    height: 10px;
+    background: gray;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  #inner {
+    height: 100%;
+    width: 0%;
+    background: white;
+    /* transition: width 0.3s linear; */
+  }
+
+  #loding {
+    font-size: 18px;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <span id="hrs">00</span>
+    <span>:</span>
+    <span id="min">00</span>
+    <span>:</span>
+    <span id="sec">00</span>
+  </div>
+
+  <div>
+    <span id="m">00</span>
+    <span>:</span>
+    <span id="s">00</span>
+    <span>:</span>
+    <span id="ms">00</span>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div id="dwnld">
+    <h2 id="loding">Downloding...</h2>
+    <div id="out"><div id="inner"></div></div>
+    <p id="percent">0%</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

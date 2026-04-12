@@ -1,0 +1,32 @@
+body {
+  overflow: hidden;
+}
+
+.main-bgc {
+  display: flex;
+  
+}
+
+.bgc{
+  height: 100px;
+  width: 100px;
+  background: red;
+  transition: .2s ease-in-out;
+}
+
+.follower {
+  height: 30px;
+  width: 30px;
+  background: blue;
+  filter: blur(5px);
+  position: absolute;
+  border-radius: 50%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+}
+
+ul {
+  cursor: pointer;
+}
+.lt {
+  text-decoration: line-through;
+}
