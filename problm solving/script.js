@@ -69,18 +69,18 @@ let productFilter = products.reduce((acc, curr) => {
 
 console.log(productFilter);
 
-const people = [
-  { name: "Rahim", age: 25 },
-  { name: "Karim", age: 32 },
-  { name: "Jamal", age: 28 },
-  { name: "Salam", age: 19 },
-];
+// const people = [
+//   { name: "Rahim", age: 25 },
+//   { name: "Karim", age: 32 },
+//   { name: "Jamal", age: 28 },
+//   { name: "Salam", age: 19 },
+// ];
 
-let elder = people.reduce(
-  (acc, curr) => (curr.age > acc.age ? curr : acc),
-  people[0],
-);
-console.log(elder);
+// let elder = people.reduce(
+//   (acc, curr) => (curr.age > acc.age ? curr : acc),
+//   people[0],
+// );
+// console.log(elder);
 
 const nested = [1, [2, 3], [4, [5, 6]], 7];
 
@@ -156,16 +156,16 @@ console.log(bigWord);
 
 // console.log(arrPerson);
 
-const students = [
-  { name: "Rahim", marks: 80 },
-  { name: "Karim", marks: 45 },
-  { name: "Jamal", marks: 72 },
-  { name: "Salam", marks: 38 },
-];
+// const students = [
+//   { name: "Rahim", marks: 80 },
+//   { name: "Karim", marks: 45 },
+//   { name: "Jamal", marks: 72 },
+//   { name: "Salam", marks: 38 },
+// ];
 
-let smallToBig = students.sort((a, b) => a.marks - b.marks);
+// let smallToBig = students.sort((a, b) => a.marks - b.marks);
 
-console.log(smallToBig);
+// console.log(smallToBig);
 
 // const nums = [1, 2, 3, 4, 5, -1, -2, -1];
 
@@ -248,14 +248,14 @@ console.log(newNums);
 
 // console.log(common);
 
-const str = "abc123def456ghi7890";
+// const str = "abc123def456ghi7890";
 
-const strToNumber = str
-  .split("")
-  .filter((num) => !isNaN(num) && num !== " ")
-  .map(Number);
+// const strToNumber = str
+//   .split("")
+//   .filter((num) => !isNaN(num) && num !== " ")
+//   .map(Number);
 
-console.log(strToNumber);
+// console.log(strToNumber);
 
 // const arr = [1, 2, 3, 2, 4, 3, 5, 1];
 // const duplicate = arr.filter(num => arr.indexOf(num) !== arr.lastIndexOf(num));
@@ -269,14 +269,14 @@ console.log(strToNumber);
 // let arrToStr = arr.join(" ");
 // console.log(typeof arrToStr);
 
-const cart = [
-  { name: "Apple", price: 30, quantity: 3 },
-  { name: "Banana", price: 15, quantity: 5 },
-  { name: "Mango", price: 50, quantity: 2 },
-];
+// const cart = [
+//   { name: "Apple", price: 30, quantity: 3 },
+//   { name: "Banana", price: 15, quantity: 5 },
+//   { name: "Mango", price: 50, quantity: 2 },
+// ];
 
-let total = cart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
-console.log(total);
+// let total = cart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+// console.log(total);
 
 const str1 = "listen";
 const str2 = "silent";
@@ -369,3 +369,48 @@ let counter = makeCounter();
 console.log(counter());
 console.log(counter());
 console.log(counter());
+
+
+
+
+const students = [
+  { name: "Rahim", marks: 80 },
+  { name: "Karim", marks: 45 },
+  { name: "Jamal", marks: 72 },
+  { name: "Salam", marks: 38 },
+];
+
+
+const bigMarks = students.filter(student => student.marks > 50).map(student => student.name);
+console.log(bigMarks);
+
+
+
+const cart = [
+  { name: "Apple", price: 30, quantity: 3 },
+  { name: "Banana", price: 15, quantity: 5 },
+  { name: "Mango", price: 50, quantity: 2 },
+];
+
+let totalPeice = cart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+
+console.log(totalPeice);
+
+
+const str = "abc123def456ghi7890";
+
+let strToNum = str.split("").filter(num => !isNaN(num)).map(Number);
+
+console.log(strToNum);
+
+
+const people = [
+  { name: "Rahim", age: 25 },
+  { name: "Karim", age: 32 },
+  { name: "Jamal", age: 28 },
+  { name: "Salam", age: 19 },
+];
+
+
+let elder = people.reduce((acc, curr) => acc.age > curr.age ? acc : curr, people[0]);
+console.log(elder);
